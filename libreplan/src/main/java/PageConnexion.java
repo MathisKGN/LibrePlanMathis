@@ -1,3 +1,6 @@
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +12,7 @@ public class PageConnexion extends PageBandeau{
 		super(driver);
 		
 	}
+	
 
 	@FindBy(xpath = "//input[@id='textfield']")
 	public WebElement username_field;
@@ -24,7 +28,13 @@ public class PageConnexion extends PageBandeau{
 		password_field.sendKeys(password);
 		se_connecter_button.click();
 		return PageFactory.initElements(driver, PageAccueil.class);
-	
-	
+	}
+		public PageTableauDeBord logIn1(WebDriver driver, String username, String password) {
+			username_field.clear();
+			username_field.sendKeys(username);
+			password_field.clear();
+			password_field.sendKeys(password);
+			se_connecter_button.click();
+			return PageFactory.initElements(driver, PageTableauDeBord.class);
 }
 }

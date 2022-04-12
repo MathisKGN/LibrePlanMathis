@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-12T13:32:47.231644100Z</date>
+  <millis>1649770367231</millis>
+  <nanos>644100</nanos>
+  <sequence>1</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>INFO</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>Le titre de la page est correct</message>
+</record>
+<record>
+  <date>2022-04-12T13:32:56.023808200Z</date>
+  <millis>1649770376023</millis>
+  <nanos>808200</nanos>
+  <sequence>2</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>SEVERE</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>La page ne vérifie pas les bonnes informations</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-12T13:33:31.826001800Z</date>
+  <millis>1649770411826</millis>
+  <nanos>1800</nanos>
+  <sequence>1</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>INFO</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>Le titre de la page est correct</message>
+</record>
+<record>
+  <date>2022-04-12T13:33:48.123786900Z</date>
+  <millis>1649770428123</millis>
+  <nanos>786900</nanos>
+  <sequence>2</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>INFO</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>Exception while taking screenshot Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //tr[@valign='top']//span[text()='Calendrier']' (tried for 15 second(s) with 500 milliseconds interval)</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-12T13:36:10.606623200Z</date>
+  <millis>1649770570606</millis>
+  <nanos>623200</nanos>
+  <sequence>1</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>INFO</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>Le titre de la page est correct</message>
+</record>
+<record>
+  <date>2022-04-12T13:36:14.009292800Z</date>
+  <millis>1649770574009</millis>
+  <nanos>292800</nanos>
+  <sequence>2</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>SEVERE</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>La page ne vérifie pas les bonnes informations</message>
+</record>
+<record>
+  <date>2022-04-12T13:36:18.085345800Z</date>
+  <millis>1649770578085</millis>
+  <nanos>345800</nanos>
+  <sequence>3</sequence>
+  <logger>TestCreationParticipantClass</logger>
+  <level>INFO</level>
+  <class>TestCreationParticipantClass</class>
+  <method>test</method>
+  <thread>1</thread>
+  <message>Exception while taking screenshot Element &lt;button class="z-paging-next" type="button"&gt; could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'FORM295', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220330194208, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15876, moz:profile: C:\Users\FORMAT~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 59bdcccd-4df0-4e96-9be5-f3f9a85e3673</message>
+</record>
+</log>

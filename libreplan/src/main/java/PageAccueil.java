@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageAccueil extends PageBandeau {
+public class PageAccueil extends PageBandeau implements PageInterfaceJDD  {
 	
 
 	
@@ -45,6 +45,10 @@ public class PageAccueil extends PageBandeau {
 	
 	@FindBy (xpath="//div[@class='z-window-modal-cl']/div/div/div/table[@class='z-hbox']/tbody/tr/td/table/tbody/tr/td/span/table/tbody/tr/td[.='Annuler']")
 	WebElement bouton_AnnulerEditionCancel;
+
+	@FindBy(xpath = "//tr[@valign='top']//span[text()='Calendrier']")
+    public WebElement fil_d_ariane_calendrier;
+
 
 	//Xpath - Test 5-2 - Mathis
 	@FindBy(xpath="//tbody/tr/td/table/tbody/tr/td[.=\"Liste des projets\"]")
@@ -89,7 +93,7 @@ public class PageAccueil extends PageBandeau {
 			e.printStackTrace();
 		}
 		//pas de test 3 - remplissage de champ
-		text_NomProjet.sendKeys("Projet test 1");
+		text_NomProjet.sendKeys(NomProjet);
 		checkbox_GenererCode.click();
 		bouton_CalendrierDateDebut.click();
 		String jour = calendrier_JourSelectionne.getText();
@@ -148,6 +152,7 @@ public class PageAccueil extends PageBandeau {
         
 
         }
+	
 	}
 
 

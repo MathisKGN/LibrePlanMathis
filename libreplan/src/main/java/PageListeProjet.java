@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageListeProjet extends PageBandeau{
+public class PageListeProjet extends PageBandeau implements PageInterfaceJDD{
 	
 
 	@FindBy(xpath="//span[.='Projet test 1']")
@@ -55,6 +55,7 @@ public class PageListeProjet extends PageBandeau{
 	
 	@FindBy(xpath="//span[.='Détail du projet']")
 	private WebElement filAriane;
+
 	public PageListeProjet(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -107,21 +108,21 @@ public class PageListeProjet extends PageBandeau{
 		
 		//Pas de test 5 
 		input_NouvelleTache.clear();
-		input_NouvelleTache.sendKeys("Tache1-P1");
+		input_NouvelleTache.sendKeys(T1);
 		input_NombreHeureTache.clear();
-		input_NombreHeureTache.sendKeys("5");
+		input_NombreHeureTache.sendKeys(TempsT1);
 		bouton_Ajouter.click();
 		//Pas de test 6
 		input_NouvelleTache.clear();
-		input_NouvelleTache.sendKeys("Tache2-P1");
+		input_NouvelleTache.sendKeys(T2);
 		input_NombreHeureTache.clear();
-		input_NombreHeureTache.sendKeys("10");
+		input_NombreHeureTache.sendKeys(TempsT2);
 		bouton_Ajouter.click();
 		//Pas de test 6
 		input_NouvelleTache.clear();
-		input_NouvelleTache.sendKeys("Tache3-P1");
+		input_NouvelleTache.sendKeys(T3);
 		input_NombreHeureTache.clear();
-		input_NombreHeureTache.sendKeys("20");
+		input_NombreHeureTache.sendKeys(TempsT3);
 		bouton_Ajouter.click();
 		try {
 			Thread.sleep(600);
@@ -131,9 +132,9 @@ public class PageListeProjet extends PageBandeau{
 		}
 		//Pas de test 6
 		input_NouvelleTache.clear();
-		input_NouvelleTache.sendKeys("Tache4-P1");
+		input_NouvelleTache.sendKeys(T4);
 		input_NombreHeureTache.clear();
-		input_NombreHeureTache.sendKeys("8");
+		input_NombreHeureTache.sendKeys(TempsT4);
 		bouton_Ajouter.click();
 		
 		//Pas de test 7 - Test fleche montante descendante
